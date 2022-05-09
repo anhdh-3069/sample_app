@@ -1,4 +1,4 @@
 rubocop:
   comment: true
-  exit_code: 512
+  exit_code: 0
   ignore: false

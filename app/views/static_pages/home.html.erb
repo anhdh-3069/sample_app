@@ -1,0 +1,10 @@
+<% provide :title, t(".provide_title") %>
+<div class="center jumbotron">
+  <h1><%= t ".welcome" %></h1>
+  <h2>
+    <%= t ".service_html_first" %>
+    <%= link_to t(".rails_href"), "http://www.railstutorial.org/" %>
+    <%= t ".service_html_last" %>
+  </h2>
+  <%= link_to t(".button_title"), '#', class: "btn btn-lg btn-primary" %>
+</div>
