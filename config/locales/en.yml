@@ -1,2 +1,27 @@
+
 en:
-  hello: "Hello world"
+  helper:
+    application_helper:
+      base_title: "Ruby on Rails Tutorial Sample App"
+  static_pages:
+    home:
+      title: "Sample App"
+      provide_title: "Home"
+      service_html_first: "This is the home page for the"
+      service_html_last: "sample application."
+      rails_href: "Ruby on Rails Tutorial"
+      button_title: "Sign up now!"
+      welcome: "Welcome to the Sample App"
+    help:
+      title: "Help"
+      provide_title: "Help"
+      service_html_first: "Get help on the Ruby on Rails Tutorial at the"
+      service_html_last: "To get help on this sample app, see the"
+      rails_help: "Rails Tutorial help"
+      rails_book: "Ruby on Rails Tutorial book"
+  layouts:
+    header:
+      title: "sample app"
+      home: "Home"
+      help: "Help"
+      login: "Log in"

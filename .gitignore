@@ -31,4 +31,7 @@
 /config/master.key
 /config/database.yml
 
+.framgia-ci-reports/
+.framgia-ci-result.temp.yml
+
 /test
