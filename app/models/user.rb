@@ -1,19 +1,30 @@
 class User < ApplicationRecord
-  VALID_EMAIL_REGEX = Setting.user.email_regex
+  VALID_EMAIL_REGEX = Settings.user.email_regex
 
   before_save :email_downcase
 
   validates :email, presence: true,
-            length: {maximum: Setting.email.max_length},
-            format: {with: VALID_EMAIL_REGEX}
+            length: {maximum: Settings.user.email.max_length},
+            format: {with: VALID_EMAIL_REGEX}, uniqueness: true
   validates :name, presence: true,
-            length: {maximum: Setting.name.max_length}
+            length: {maximum: Settings.user.name.max_length}
   validates :password, presence: true,
-            length: {minimum: Setting.password.min_lenght}
+            length: {minimum: Settings.user.password.min_length}
 
   has_secure_password
 
-  def email_downcase email
+  def email_downcase
     email.downcase!
+  end
+
+  class << self
+    def self.digest string
+      cost = if ActiveModel::SecurePassword.min_cost
+               BCrypt::Engine::MIN_COST
+             else
+               BCrypt::Engine.cost
+             end
+      BCrypt::Password.create(string, cost: cost)
+    end
   end
 end
