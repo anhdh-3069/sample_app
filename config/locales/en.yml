@@ -25,3 +25,13 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+  users:
+    new:
+      title: "Sign up"
+      btn_title: "Create my account"
+      password_confirmation: "Confirmation"
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+      error: "Error"
+      wellcome: "Welcome to the sample app!"
