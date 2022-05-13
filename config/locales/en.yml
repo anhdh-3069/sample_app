@@ -43,5 +43,7 @@ en:
       btn_signup: "Sign up now!"
       btn_login: "Login"
       new_user : "New user? "
+      remember : "Remember me on this computer"
     controller:
       error: "Invalid email password combination"
+      find_error: "Invalid Email"
