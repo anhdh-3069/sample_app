@@ -1,5 +1,5 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 
 :root {
   --white-color: #fff;
@@ -21,44 +21,45 @@ textarea {
 .center h1 {
   margin-bottom: 10px;
 }
+
 /* header */
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: var(--white-color);
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
 }
 #logo:hover {
-  color: #fff;
+  color: var(--white-color);
   text-decoration: none;
 }
 /* sidebar */
 aside {
-  section.user_info {
-    margin-top: 20px;
-  }
-  section {
-    padding: 10px 0;
-    margin-top: 20px;
-    &:first-child {
-      border: 0;
-      padding-top: 0;
-    }
-    span {
-      display: block;
-      margin-bottom: 3px;
-      line-height: 1;
-    }
+section.user_info {
+  margin-top: 20px;
+}
+section {
+  padding: 10px 0;
+  margin-top: 20px;
+&:first-child {
+  border: 0;
+  padding-top: 0;
+}
+span {
+  display: block;
+  margin-bottom: 3px;
+  line-height: 1;
+}
     h1 {
-      font-size: 1.4em;
-      text-align: left;
-      letter-spacing: -1px;
-      margin-bottom: 3px;
-      margin-top: 0px;
+    font-size: 1.4em;
+    text-align: left;
+    letter-spacing: -1px;
+    margin-bottom: 3px;
+    margin-top: 0px;
     }
   }
 }
@@ -70,26 +71,19 @@ aside {
   margin-top: 15px;
 }
 /* forms */
-input,
-textarea,
-select,
-.uneditable-input {
+input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
-  box-sizing: border-box;
-}
-h1 {
-  text-align: center;
 }
 input {
   height: auto !important;
 }
 #error_explanation {
-  color: red;
-  ul {
-    color: red;
-    margin: 0 0 30px;
+  color: var(--red-color);
+    ul {
+  color: var(--red-color);
+  margin: 0 0 30px 0;
   }
 }
 .field_with_errors {
@@ -98,9 +92,27 @@ input {
     color: $state-danger-text;
   }
 }
-
-// Login
-.align-center {
+.checkbox {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+}
+#session_remember_me {
+  margin-left: 0;
+  width: auto;
+}
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+.align-center{
   text-align: center;
-  align-items: center;
 }

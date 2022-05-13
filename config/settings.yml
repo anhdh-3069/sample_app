@@ -6,3 +6,9 @@ user:
     max_length: 50
   password:
     min_length: 6
+users_helper:
+  option:
+    max_length: 80
+users:
+  size:
+    max_length: 50
