@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
-    redirect_to root_path unless @user
-    flash[:danger] = @user.errors.full_messages.to_sentence
+    return if @user
+
+    redirect_to root_path
+    flash[:danger] = t "shared.error_messages.no_info"
   end
 
   def new
@@ -12,10 +14,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_parmas
     if @user.save
+      log_in @user
       flash[:success] = t "shared.error_messages.wellcome"
       redirect_to @user
     else
-      flash[:danger] =  "Taọ taì khoản thất baị"
+      flash[:danger] = t "shared.error_messages.created_fail"
       render :new
     end
   end
