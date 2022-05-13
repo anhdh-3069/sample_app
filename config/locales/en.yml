@@ -47,3 +47,5 @@ en:
     controller:
       error: "Invalid email password combination"
       find_error: "Invalid Email"
+    controller:
+      error: "Invalid email password combination"

@@ -4,6 +4,10 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by id: params[:id]
+    return if @user
+
+    redirect_to root_path
+    flash[:danger] = t "shared.error_messages.no_info"
   end
 
   def new
@@ -22,6 +26,10 @@ class UsersController < ApplicationController
       redirect_to @user
     else
       flash[:error] = "fail"
+      flash[:success] = t "shared.error_messages.wellcome"
+      redirect_to @user
+    else
+      flash[:danger] = t "shared.error_messages.created_fail"
       render :new
     end
   end
