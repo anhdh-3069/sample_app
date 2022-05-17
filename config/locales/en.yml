@@ -42,6 +42,8 @@ en:
       edit_fail: "Edit Error"
     index:
       title: "All user"
+    create:
+      create_info: "Please check your email to activate your account."
     destroy:
       delete_success: "User deleted"
       delete_fail: "Delele faile"
@@ -64,3 +66,18 @@ en:
     controller:
       error: "Invalid email password combination"
       find_error: "Invalid Email"
+      flass_warning: "Account not activated. Check your email for the activation link."
+  account_activations:
+    edit:
+      flash_success: "Account activated!"
+      flash_danger: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      subject_mail: "Account activation"
+      title: "Sample App"
+      greeting: "Hi"
+      service_html: "Welcome to the Sample App! Click on the link below to activate your account:"
+      href: "Activate"
+    account_activation_text:
+      greeting: "Hi"
+      service_html: "Welcome to the Sample App! Click on the link below to activate your account:"

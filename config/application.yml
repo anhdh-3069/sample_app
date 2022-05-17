@@ -1,5 +1,0 @@
-host: "localhost:3000"
-mail_user_name: "hoanganhduong3010@gmail.com"
-mail_user_password: "Hoanganhduong123"
-mail_address: "smtp.gmail.com"
-mail_port: "587"
