@@ -13,4 +13,14 @@ users:
     expired: 2
 users_helper:
   option:
-    length: 80
+    lengt: 80
+micropost:
+  image_path: ["image/jpeg", "image/gif", "image/png"]
+  message: "must be a valid image format"
+  message_size: "should be less than 5MB"
+  less_than: 5
+  length_content: 140
+  resize_to_limit: [500, 500]
+size_gravatar: 50
+items: 5
+path_rails_tut: "http://www.railstutorial.org/"
