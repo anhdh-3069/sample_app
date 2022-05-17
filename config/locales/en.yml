@@ -12,6 +12,7 @@ en:
       rails_href: "Ruby on Rails Tutorial"
       button_title: "Sign up now!"
       welcome: "Welcome to the Sample App"
+      micropost: "Micropost Feed"
     help:
       title: "Help"
       provide_title: "Help"
@@ -50,6 +51,17 @@ en:
       delete_fail: "Delele faile"
     logged_in_user:
       login_warning: "Please log in"
+    following:
+      follow: "Following"
+    followers:
+      follow: "Follower"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_my_profile: "View my profile"
+      micropost: "Micropost: "
   shared:
     error_messages:
       the_form_contains: "The form contains"
@@ -64,6 +76,9 @@ en:
     user_info:
       href: "view my profile"
       micropost: "micropost"
+    stats:
+      following: "Following"
+      followers: "Followers"
   sessions:
     new:
       title: "Login"
@@ -76,11 +91,6 @@ en:
       error: "Invalid email password combination"
       find_error: "Invalid Email"
       flass_warning: "Account not activated. Check your email for the activation link."
-  micropost:
-    create:
-      flass_success: "Micropost created!"
-    correct_user:
-      flass_danger: "Micropost invalid"
   microposts:
     micropost:
       delete: "Delete"
@@ -88,6 +98,10 @@ en:
     destroy:
       flass_success: "Micropost deleted!"
       flass_danger: "Delete fail"
+    create:
+      flass_success: "Micropost created!"
+    correct_user:
+      flass_danger: "Micropost invalid"
   account_activations:
     edit:
       flash_success: "Account activated!"
