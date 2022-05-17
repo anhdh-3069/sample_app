@@ -30,6 +30,23 @@ en:
       title: "Sign up"
       btn_title: "Create my account"
       password_confirmation: "Confirmation"
+      delete: "Delete"
+      confirm: "You sure?"
+    edit:
+      provite_title: "Edit user"
+      title: "Update your profile"
+      btn_save: "Save change"
+      btn_changes: "Changes"
+    update:
+      edit_sussces: "Profile updated"
+      edit_fail: "Edit Error"
+    index:
+      title: "All user"
+    destroy:
+      delete_success: "User deleted"
+      delete_fail: "Delele faile"
+    logged_in_user:
+      login_warning: "Please log in"
   shared:
     error_messages:
       the_form_contains: "The form contains"

@@ -11,7 +11,8 @@ class User < ApplicationRecord
   validates :name, presence: true,
             length: {maximum: Settings.user.name.max_length}
   validates :password, presence: true,
-            length: {minimum: Settings.user.password.min_length}
+            length: {minimum: Settings.user.password.min_length},
+            allow_nil: true
 
   has_secure_password
 
@@ -38,17 +39,15 @@ class User < ApplicationRecord
 
   def remember
     self.remember_token = User.new_token
-    update remember_digest: User.digest(remember_token)
+    update remember_digest: User.digest remember_tokens
   end
 
   def forget
     update_attribute :remember_digest, nil
   end
-
   private
 
   def email_downcase
     email.downcase!
   end
-
 end

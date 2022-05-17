@@ -83,6 +83,9 @@ aside {
   margin-top: 15px;
 }
 
+.gravatar_edit {
+  margin-top: 15px;
+}
 /* forms */
 input,
 textarea,
@@ -134,8 +137,17 @@ input {
     margin-left: 20px;
   }
 }
-
 #session_remember_me {
   margin-left: 0;
   width: auto;
+}
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
