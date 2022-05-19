@@ -15,7 +15,7 @@ en:
     help:
       title: "Help"
       provide_title: "Help"
-      service_html_first: "Get help on the Ruby on Rails Tutorial at the"
+      service_html_first: "Get help on the Ruby on Rapassword_resetsils Tutorial at the"
       service_html_last: "To get help on this sample app, see the"
       rails_help: "Rails Tutorial help"
       rails_book: "Ruby on Rails Tutorial book"
@@ -63,6 +63,7 @@ en:
       btn_login: "Login"
       new_user : "New user? "
       remember : "Remember me on this computer"
+      forgot_pass: "Forgot password"
     controller:
       error: "Invalid email password combination"
       find_error: "Invalid Email"
@@ -71,6 +72,27 @@ en:
     edit:
       flash_success: "Account activated!"
       flash_danger: "Invalid activation link"
+  password_resets:
+    create:
+      flash_create_info: "Email sent with password reset instructions"
+      flash_create_danger: "Email address not found"
+    update:
+      flash_update_success: "Password has been reset."
+      flash_update_fail: "Password update fail."
+      error: "can't be empty"
+    check_expiration:
+      flash_danger: "Password reset has expired."
+    get_user:
+      email_not_found: "Email not found"
+    new:
+      provide_title: "Forgot password"
+      title: "Forgot password"
+      btn_button: "Submit"
+    edit:
+      provide_title: "Reset password"
+      title: "Reset password"
+      password_confirmation: "Confirmation"
+      btn_button: "Update password"
   user_mailer:
     account_activation:
       subject_mail: "Account activation"
@@ -81,3 +103,10 @@ en:
     account_activation_text:
       greeting: "Hi"
       service_html: "Welcome to the Sample App! Click on the link below to activate your account:"
+    password_reset:
+      subject_password: "Password reset"
+      title: "Password reset"
+      service_html_first: "To reset your password click the link below:"
+      link_to_title: "Reset password"
+      service_html_last: "This link will expire in two hours."
+      content: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."

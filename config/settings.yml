@@ -9,6 +9,8 @@ user:
 users:
   size:
     max_length: 50
+  hours:
+    expired: 2
 users_helper:
   option:
-    max_length: 80
+    length: 80
