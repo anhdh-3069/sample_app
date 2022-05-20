@@ -32,6 +32,7 @@ en:
       password_confirmation: "Confirmation"
       delete: "Delete"
       confirm: "You sure?"
+      micropost_feed: "Micropost feed"
     edit:
       provite_title: "Edit user"
       title: "Update your profile"
@@ -56,6 +57,13 @@ en:
       wellcome: "Welcome to the sample app"
       created_fail: "Created account fail"
       no_info: "No information user"
+    micropost_form:
+      place_holder: "Compose new micropost..."
+      post: "Post"
+      alert: "Maximum file size is 5MB. Please choose a smaller file."
+    user_info:
+      href: "view my profile"
+      micropost: "micropost"
   sessions:
     new:
       title: "Login"
@@ -68,6 +76,18 @@ en:
       error: "Invalid email password combination"
       find_error: "Invalid Email"
       flass_warning: "Account not activated. Check your email for the activation link."
+  micropost:
+    create:
+      flass_success: "Micropost created!"
+    correct_user:
+      flass_danger: "Micropost invalid"
+  microposts:
+    micropost:
+      delete: "Delete"
+      you_sure: "You sure ?"
+    destroy:
+      flass_success: "Micropost deleted!"
+      flass_danger: "Delete fail"
   account_activations:
     edit:
       flash_success: "Account activated!"
@@ -110,3 +130,11 @@ en:
       link_to_title: "Reset password"
       service_html_last: "This link will expire in two hours."
       content: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+activerecord:
+  errors:
+    models:
+      micropost:
+        attributes:
+          image:
+            too_big: "Img size is too big"
+            wrong_format: "must be a valid image format"

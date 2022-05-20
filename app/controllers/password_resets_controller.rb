@@ -1,6 +1,6 @@
 class PasswordResetsController < ApplicationController
   before_action :get_user, :valid_user, :check_expiration,
-                 only: %i(edit update)
+                only: %i(edit update)
 
   def new; end
 
@@ -31,7 +31,7 @@ class PasswordResetsController < ApplicationController
     end
   end
 
-  def edi t; end
+  def edit; end
 
   private
 

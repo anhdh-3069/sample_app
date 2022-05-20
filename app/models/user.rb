@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   VALID_EMAIL_REGEX = Settings.user.email_regex
 
   attr_accessor :remember_token, :activation_token, :reset_token
@@ -46,6 +47,10 @@ class User < ApplicationRecord
 
   def forget
     update_attribute :remember_digest, nil
+  end
+
+  def feed
+    microposts.recent_posts
   end
 
   def send_mail_activate
